@@ -4,7 +4,9 @@ const express     = require('express');
 const bodyParser  = require('body-parser');
 const expect      = require('chai').expect;
 const cors        = require('cors');
-require('dotenv').config();
+
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 
 require('./db-connection.js');
 
