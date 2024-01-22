@@ -5,8 +5,8 @@ const bodyParser  = require('body-parser');
 const expect      = require('chai').expect;
 const cors        = require('cors');
 
-const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, './.env') });
+
+require('dotenv').config();
 
 require('./db-connection.js');
 
